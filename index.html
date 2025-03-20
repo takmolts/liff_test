@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIFFアプリ</title>
-    <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
-    <script defer src="join.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>あみだくじ抽選</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://static.line-scdn.net/liff/2.7/sdk.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- ReactとReactDOMのCDN -->
+  <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+  <!-- Reactのバンドル (create-react-appでビルドされたJS) -->
+  <script src="dist/main.js" defer></script>
 </head>
 <body>
-    <h1>LIFF アプリ</h1>
-    <button id="login">LINEログイン</button>
+  <div id="root"></div>
 </body>
 </html>
